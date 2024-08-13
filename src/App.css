@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header img{
+    border-radius: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  ul li{
+    display: inline-block;
+    margin-left: 30px;
+    /* background-color: green; */
+    height:100px;
+    width:100px;
+    overflow: auto;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  header{
+    height:80px;
+    width:100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 8px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:1;
+    color:white
   }
-}
+  li:first-child{
+    padding-top: 0px;
+  }
+  .row{
+    /* height:700px; */
+    width:100%;
+    display: flex;
+    position: absolute;
+    top:100px;
+    flex-wrap: wrap;
+    
+  }
+  .shoesCard{
+    height:300px; 
+    width:30%;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .shoes{
+      height:100%;
+      width:70%;
+      /* background-color: red; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .cart{
+      height:100%;
+      width:30%;
+      /* background-color: green; */
+  }
+  .shoesCard button{
+    padding: 10px 20px;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius: 20px;
+  }
+  table{
+    margin-top: 30px;
+  }
+  th button{
+    margin:0px 5px;
+  }
+  .payment{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:none;
+    background-color: lightblue;
+    transition: 5s;
+    
+  }
+  .payment:hover{
+    transform:scale(1.5);
+  }
+  .Buy{
+    width:100%;
+    position: absolute;
+    margin-top:150px
+  }
+  .method{
+    padding-left: 80px;
+  }
+  .method input{
+    margin-left: 30px;
+  }
+  .payment_row{
+    height:500px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .detail,.items{
+    width:50%;
+    height:100%;
+  }
+  .detail{
+    padding-top: 50px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    /* background-color: green; */
+  }
+  .detail input{
+    padding: 8px 30px;
+    border-radius: 20px;
+  }
+  .items table{
+    margin-bottom: 20px;
+    /* background-color: red; */
+  }
+  .cnfm_payment{
+    margin-top: 20px;
+    /* text-align: center; */
+  }
+  
+  
+  
